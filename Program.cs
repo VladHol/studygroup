@@ -27,7 +27,7 @@ namespace Code4Kata
             //     {3, (x,y) => x - y}
             // };
            double result = 0;
-           var commandToBeExecuted = commands.FirstOrDefault(c => c.Type == input);
+           var commandToBeExecuted = commands.FirstOrDefault(c => c.Type == input); // Could be replaced with a Factory
             if(commandToBeExecuted != null)
                 result = commandToBeExecuted.Execute(3,5);
             else
